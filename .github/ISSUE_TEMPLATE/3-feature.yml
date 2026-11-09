@@ -1,0 +1,17 @@
+name: New feature
+description: Request a new feature for Linty HDL Designer
+type: feature
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Request a new feature for [Linty HDL Designer](https://hdl-designer.linty-services.com/).
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: Describe the new feature and why it would help.
+      placeholder: |
+        Describe the feature here.
+    validations:
+      required: true

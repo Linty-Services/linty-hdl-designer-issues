@@ -1,0 +1,17 @@
+name: Improvement
+description: Suggest an improvement to Linty HDL Designer
+type: improvement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Suggest an improvement to [Linty HDL Designer](https://hdl-designer.linty-services.com/).
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: Describe the improvement and why it would help.
+      placeholder: |
+        Describe the improvement here.
+    validations:
+      required: true

@@ -1,0 +1,74 @@
+name: Bug
+description: Report a bug in Linty HDL Designer
+type: bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Report a bug in [Linty HDL Designer](https://hdl-designer.linty-services.com/).
+  - type: input
+    id: extension-version
+    attributes:
+      label: Extension version
+      description: Version of the Linty HDL Designer extension.
+      placeholder: e.g. 1.2.3
+    validations:
+      required: true
+  - type: dropdown
+    id: editor
+    attributes:
+      label: Editor
+      description: Which editor are you using?
+      options:
+        - VS Code
+        - Cursor
+        - VSCodium
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: editor-other
+    attributes:
+      label: Editor name
+      description: If you selected Other, name the editor. Leave this empty otherwise.
+      placeholder: e.g. Code - OSS
+    validations:
+      required: false
+  - type: input
+    id: editor-version
+    attributes:
+      label: Editor version
+      description: Version of VS Code, Cursor, VSCodium, or the other editor.
+      placeholder: e.g. 1.95.0
+    validations:
+      required: true
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      description: Which operating system are you using?
+      options:
+        - Linux
+        - Mac
+        - Windows
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: platform-other
+    attributes:
+      label: Platform name
+      description: If you selected Other, name the platform. Leave this empty otherwise.
+      placeholder: e.g. FreeBSD
+    validations:
+      required: false
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: |
+        Describe the bug. Include what you expected, what happened, and the steps to reproduce it.
+      placeholder: |
+        Describe the bug here.
+    validations:
+      required: true
